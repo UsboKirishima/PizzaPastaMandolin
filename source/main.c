@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "cli_colors.h"
+//#include "cli_colors.h"
 
-
-int main() 
+int main()
 {
-    SEND_ERROR("There is an error!\n");
+    char *ascii ="██████  ██████  ███    ███     ██████      ██████  \n██   ██ ██   ██ ████  ████          ██    ██  ████ \n██████  ██████  ██ ████ ██      █████     ██ ██ ██ \n██      ██      ██  ██  ██          ██    ████  ██ \n██      ██      ██      ██     ██████  ██  ██████  \n";
+    prinf_cyan_bold(ascii);
 }
