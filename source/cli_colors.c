@@ -155,3 +155,8 @@ void prinf_purple_bold(char *send_value)
 {
      printf("\n%s%s", BCOLOR_PURPLE, send_value);
 }
+
+char *hello(char *lol) 
+{
+     return lol;
+}
