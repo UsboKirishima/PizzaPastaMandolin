@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 #include "cli_colors.h"
+#include "integration.h"
 
 int main()
 {
-    char *ascii ="██████  ██████  ███    ███     ██████      ██████  \n██   ██ ██   ██ ████  ████          ██    ██  ████ \n██████  ██████  ██ ████ ██      █████     ██ ██ ██ \n██      ██      ██  ██  ██          ██    ████  ██ \n██      ██      ██      ██     ██████  ██  ██████  \n";
-    prinf_cyan_bold(ascii);
+    integration_start();
 }
