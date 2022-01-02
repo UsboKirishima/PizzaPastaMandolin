@@ -5,7 +5,7 @@
 
 void deb_checking()
 {
-    printf("");
+    printf("\033[37m");
     system("chmod +x scripts/deps.sh");
     system("bash scripts/deps.sh");
 }

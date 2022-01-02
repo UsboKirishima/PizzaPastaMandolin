@@ -1,11 +1,11 @@
-echo -e "\n${GREEN}[${WHITE}/${GREEN}]${GREEN} Checking dependencies..."
+echo -e "\n${YELLOW}[${WHITE}/${YELLOW}]${YELLOW} Checking dependencies..."
 if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
-		echo -e "${GREEN}[${WHITE}+${GREEN}]${GREEN} Packages already installed."
+		echo -e "${YELLOW}[${WHITE}+${YELLOW}]${YELLOW} Packages already installed."
 	else
 		pkgs=(php curl wget unzip)
 		for pkg in "${pkgs[@]}"; do
 			type -p "$pkg" &>/dev/null || {
-				echo -e "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
+				echo -e "\n${YELLOW}[${WHITE}+${YELLOW}]${WHITE} Installing package : ${ORANGE}$pkg${CYAN}"${WHITE}
 				if [[ `command -v pkg` ]]; then
 					pkg install "$pkg" -y
 				elif [[ `command -v apt` ]]; then
