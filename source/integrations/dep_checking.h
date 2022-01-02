@@ -5,10 +5,7 @@
 
 void deb_checking()
 {
-    prinf_orange_bold("\n[/] Checking dependencies.");
-    //put dependencies here
-    if(SUCCES == 0)
-    {
-        SEND_SUCCESS_bold("[+] Succesfully installed and builded dependencies.\n");
-    }
+    printf("");
+    system("chmod +x scripts/deps.sh");
+    system("bash scripts/deps.sh");
 }

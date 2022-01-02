@@ -6,5 +6,6 @@
 
 int main()
 {
+    system("clear");
     integration_start();
 }
