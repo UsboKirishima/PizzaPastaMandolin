@@ -34,9 +34,14 @@ without credits or with another credits.
    git clone https://github.com/UsboKirishima/PizzaPastaMandolin/
    cd PizzaPastaMandolin
    
-3. Compile and run! bash
-   gcc main.c cli_colors.c integration.c -o main
+3. Compile and run! 
+   gcc main.c cli_colors.c integration.c Dos.c -o main
    ./main
+
+  PS: your can run the bash file for run all files
+
+  chmod +x main.sh
+  ./main.sh
 
 ==========================================================================================
 ==========================================================================================

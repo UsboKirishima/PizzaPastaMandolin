@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "../cli_colors.h"
+#include "../Dos.h"
 
 
 void option_choose()
@@ -10,7 +11,7 @@ void option_choose()
     const bool PLOGGER = false;
     const bool PPHISHER = true;
 
-    const char* premium_error = "Sorry, this function is premium!";
+    const char* premium_error = "Sorry, this is a premium function!\n";
 
 
     int option;
@@ -31,7 +32,7 @@ void option_choose()
         }
         else
         {
-            
+            dos_start();
         }
     } 
     else if(option == 2)
@@ -42,7 +43,7 @@ void option_choose()
         }
         else
         {
-            
+            SEND_ERROR_bold("[-] This tool is under maintenance.\n");
         }
     }
     else if(option == 3)
@@ -53,7 +54,7 @@ void option_choose()
         }
         else
         {
-            
+            SEND_ERROR_bold("[-] This tool is under maintenance.\n");
         }
 
     }
