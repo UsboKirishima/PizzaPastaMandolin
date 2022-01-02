@@ -8,7 +8,7 @@ void option_choose()
 {
     const bool PDOS = false;
     const bool PLOGGER = false;
-    const bool PPISHER = true;
+    const bool PPHISHER = true;
 
     const char* premium_error = "Sorry, this function is premium!";
 
@@ -18,7 +18,7 @@ void option_choose()
     prinf_magenta_bold("\n[?] Choose an option:");
           prinf_orange("    1. Dos tool");
           prinf_orange("    2. KeyLogger");
-          prinf_orange("    3. Pisher (Premium)");
+          prinf_orange("    3. Phisher (Premium)");
 
     prinf_red("\n> \033[37m");
     scanf("%d", &option);
@@ -47,7 +47,7 @@ void option_choose()
     }
     else if(option == 3)
     {
-        if(PPISHER == true)
+        if(PPHISHER == true)
         {
             SEND_ERROR_bold(premium_error);
         }
