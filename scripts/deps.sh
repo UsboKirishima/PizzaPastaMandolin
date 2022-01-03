@@ -1,6 +1,7 @@
 echo -e "\n${YELLOW}[${WHITE}/${YELLOW}]${YELLOW} Checking dependencies..."
 if [[ `command -v php` && `command -v wget` && `command -v curl` && `command -v unzip` ]]; then
 		echo -e "${YELLOW}[${WHITE}+${YELLOW}]${YELLOW} Packages already installed."
+		echo ""
 	else
 		pkgs=(php curl wget unzip)
 		for pkg in "${pkgs[@]}"; do

